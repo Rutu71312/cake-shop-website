@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Strawberry",
+        "price": 200,
+        "image": "images/cake3.png"
+    },
+    {
+        "id": 2,
+        "name": "Chocolate",
+        "price": 150,
+        "image": "images/cake1.png"
+    }, 
+    {
+        "id": 3,
+        "name": "Black forest",
+        "price": 150,
+        "image": "images/cake2.png"
+    },
+    {
+        "id": 4,
+        "name": "Chocolate 4",
+        "price": 150,
+        "image": "images/cake1.png"
+    },
+    {
+        "id": 5,
+        "name": "Chocolate 5",
+        "price": 150,
+        "image": "images/cake3.png"
+    },
+    {
+        "id": 6,
+        "name": "Chocolate 5",
+        "price": 150,
+        "image": "images/cake3.png"
+    },
+    {
+        "id": 7,
+        "name": "Chocolate 5",
+        "price": 150,
+        "image": "images/cake3.png"
+    }
+]

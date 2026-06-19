@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" type="image/png" href="./logo3.avif">
+
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+
+        <form id="paymentForm">
+            <label for="address"><strong>Delivery Address:</strong></label>
+            <textarea id="address" placeholder="Enter your address" required></textarea>
+
+            <label for="mobile"><strong>Mobile Number:</strong></label>
+            <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+
+            <p><strong>Total Amount:</strong> ₹<span id="totalAmount">0</span></p>
+            <p><strong>Estimated Delivery:</strong> <span id="deliveryDate"></span></p>
+
+            <h3>Select Payment Method</h3>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="card"> Credit/Debit Card</label>
+                <label><input type="radio" name="payment" value="upi"> UPI</label>
+                <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+            </div>
+
+            <!-- Card Payment Section -->
+            <div id="cardDetails" class="hidden">
+                <h3>Enter Card Details</h3>
+                <input type="text" id="cardNumber" placeholder="Card Number" required>
+                <input type="text" id="cardHolder" placeholder="Cardholder Name" required>
+                <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                <input type="text" id="cvv" placeholder="Enter Price" required>
+            </div>
+
+            <!-- UPI Payment Section -->
+            <div id="upiDetails" class="hidden">
+                <h3>Scan UPI QR Code</h3>
+                <img id="qrCode" src="./images/QR.jpg" alt="UPI QR Code">
+            </div>
+
+            <button type="submit" id="placeOrder">Place Order</button>
+        </form>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

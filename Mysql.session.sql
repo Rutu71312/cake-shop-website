@@ -1,0 +1,1 @@
+insert INTO users VALUES (1,allen','allen@gmail.com','allen123');

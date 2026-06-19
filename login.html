@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CDN icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Sign up</h1>
+        <form id="form" action="./php/signup.php" method="POST">
+               <div class="input-group">
+                   <div class="input-field" id="nameField">
+                      <i class="fa-solid fa-user"></i>
+                      <input type="text" name="name" placeholder="Name" id="nameInput" required>
+                   </div>
+  
+                   <div class="input-field">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input type="email" name="email" placeholder="Email" id="emailInput" required>
+                   </div>
+  
+                   <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="password" name="password" placeholder="Password" id="passwordInput" required>
+                   </div>
+                   <p>Forgot password? <a href="#">Click Here!</a></p>
+               </div>
+               <div class="btn-field">
+                   <button type="submit" id="signupBtn">Sign up</button>
+                   <button type="button" id="signinBtn" class="disable">Sign in</button>
+               </div>
+        </form>
+      </div> 
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
